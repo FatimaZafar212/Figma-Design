@@ -30,29 +30,24 @@
     </nav>
   </header>
 
-  <!-- Landing Page -->
   <section id="home" class="landing">
     <div class="landingcontent">
       <h3 class="webcontent">Startup3</h3>
       <h1 class="webcontent">Forget About Code</h1>
       <p class="webcontent">Startup Framework gives you complete freedom over your creative process — you don’t have to
         think about any technical aspects. There are no limits and absolutely no coding.</p>
-
       <div class="dots">
         <span class="dot active"></span>
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
       </div>
-
       <a href="#create-account" class="cta-button">Create an Account</a>
     </div>
 
-    <!-- Left and Right Arrows -->
     <div class="arrow arrow-left" role="button" aria-label="previous">&#10094;</div>
     <div class="arrow arrow-right" role="button" aria-label="next">&#10095;</div>
   </section>
-
   <section class="content section">
     <div class="content_content">
       <span class="webcontent">Free Sample</span>
@@ -62,19 +57,15 @@
         allowing you to create hundreds of solutions.</p>
     </div>
   </section>
-
   <section id="features" class="section">
     <div class="features-container">
-
       <div class="features-image">
         <img src="Mockup.png" alt="Laptop image" />
       </div>
-
       <div class="features-content">
         <h1>We Create Something New</h1>
         <p>We have created a new product that will help designers, developers and companies create websites for their
           startups quickly and easily.</p>
-
         <div class="features-items">
           <div class="feature-box">
             <i class="fas fa-folder"></i>
@@ -96,7 +87,6 @@
       </div>
     </div>
   </section>
-
   <section class="form section">
     <div class="form-container">
       <div class="form-text">
@@ -104,7 +94,6 @@
         <p>We have created a new product that will help designers, developers and companies create websites for their
           startups quickly and easily.</p>
       </div>
-
       <div class="form-box">
         <div class="form-tabs">
           <span class="active">Sign Up</span>
@@ -120,7 +109,6 @@
       </div>
     </div>
   </section>
-
   <section class="testimonial section">
     <h1>Our Happy Clients</h1>
     <div class="testimonial-grid">
@@ -156,7 +144,6 @@
       </div>
     </div>
   </section>
-
   <section class="calltoaction" id="calltoaction">
     <div class="cta-container">
       <h1>Easy to setup. <br> Easy to maintain</h1>
@@ -169,7 +156,6 @@
     </div>
   </section>
 
-  <!-- Showcase Section -->
   <section class="showcase-section section" id="showcase">
     <div class="showcase-inner">
       <div class="showcase-header">
@@ -201,7 +187,6 @@
     </div>
   </section>
 
-  <!-- Team Section -->
   <section class="team-section section" id="team">
     <div class="team-inner">
       <h2>Startup Crew</h2>
@@ -259,7 +244,6 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section class="contact-section section" id="contact">
     <div class="contact-inner">
       <div class="contact-text">
@@ -273,44 +257,51 @@
         </div>
       </div>
       <div class="contact-form">
-       <form>
-  <div class="row two">
-    <div>
-      <label>Your Name</label>
-      <input type="text" placeholder="First name" required>
-    </div>
-    <div>
-      <label for="budget">Budget</label>
-      <select id="budget">
-        <option value="$800">$800</option>
-        <option value="$500" selected>$500</option>
-      </select>
-    </div>
-  </div>
+        <div class="form-panel">
+          <form id="contact-form" action="#" method="post" novalidate>
 
-  <div class="row">
-    <label>Email</label>
-    <input type="email" placeholder="name@mail.com" required>
-  </div>
+            <div class="row two name-budget">
+              <div class="field">
+                <label for="cf-name">Your Name</label>
+                <input id="cf-name" name="name" type="text" placeholder="First name" required>
+              </div>
+              <div class="field">
+                <label for="cf-budget">Budget</label>
+                <select id="cf-budget" name="budget" aria-label="Budget">
+                  <option value="$800">$800</option>
+                  <option value="$500" selected>$500</option>
+                  <option value="$300">$300</option>
+                </select>
+              </div>
+            </div>
 
-  <div class="row">
-    <label>Your Message</label>
-    <textarea placeholder="Message"></textarea>
-  </div>
-  <div class="row actions">
-    <label class="checkbox-label">
-      <input id="copy" type="checkbox" checked>
-      <span>Send me a copy</span>
-    </label>
-    <button class="send-btn" type="submit">Send</button>
-  </div>
-</form>
+            <div class="row">
+              <div class="field">
+                <label for="cf-email">INPUT FIELD</label>
+                <input id="cf-email" name="email" type="email" placeholder="name@mail.com" required>
+              </div>
+            </div>
 
+            <div class="row">
+              <div class="field">
+                <label for="cf-message">Your Message</label>
+                <textarea id="cf-message" name="message" placeholder="Message" rows="6"></textarea>
+              </div>
+            </div>
+
+            <div class="row actions">
+              <label class="checkbox-label">
+                <input id="cf-copy" name="copy" type="checkbox" checked>
+                <span class="chk-text">Send me a copy</span>
+              </label>
+              <button class="send-btn" type="submit">Send</button>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Pricing Section -->
   <section class="pricing-section section" id="pricing">
     <div class="pricing-inner">
       <h2>Plans & Pricing</h2>
@@ -367,36 +358,35 @@
       </div>
     </div>
   </section>
-<section>
-  <div class="footer">
-    <div class="footer-top">
-      <div class="left">Startup 3</div>
-      <div class="right">
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms</a>
-            <i class="fab fa-twitter"  id="socials"></i>
-            <i class="fab fa-facebook-f" id="socials"></i>
-<i class="fab fa-google" id="socials"></i>
+  <section>
+    <div class="footer">
+      <div class="footer-top">
+        <div class="left">Startup 3</div>
+        <div class="right">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms</a>
+          <i class="fab fa-twitter" id="socials"></i>
+          <i class="fab fa-facebook-f" id="socials"></i>
+          <i class="fab fa-google" id="socials"></i>
+        </div>
+      </div>
+      <div class="footer-line"></div>
+      <div class="footer-bottom">
+        <div class="links">
+          <a href="#">Tour</a>
+          <a href="#">Features</a>
+          <a href="#">Pricing Plans</a>
+          <a href="#">Our Works</a>
+          <a href="#">Brands</a>
+          <a href="#">Contacts</a>
+        </div>
+        <div class="copyright">
+          © 2017 Designmodo. All rights reserved.
+        </div>
       </div>
     </div>
-
-    <div class="footer-line"></div>
-
-    <div class="footer-bottom">
-      <div class="links">
-        <a href="#">Tour</a>
-        <a href="#">Features</a>
-        <a href="#">Pricing Plans</a>
-        <a href="#">Our Works</a>
-        <a href="#">Brands</a>
-        <a href="#">Contacts</a>
-      </div>
-      <div class="copyright">
-        © 2017 Designmodo. All rights reserved.
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
   <script src="script.js"></script>
 </body>
+
 </html>
